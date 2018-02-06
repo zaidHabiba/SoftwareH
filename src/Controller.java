@@ -11,6 +11,8 @@ public class Controller {
 	
 	public void add(View v){
 		view=v;
+		
+		
 	}
 
 	public boolean addActionPerformed(ActionEvent evt,String s1,String s2) {
