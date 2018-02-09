@@ -5,9 +5,9 @@ public class Main {
 		View v=new View();
 		Controller c=new Controller();
 		Model m=new Model();
-		c.add(m);
-		c.add(v);
-		v.add(c);
+		c.addModel(m);
+		c.addView(v);
+		v.addController(c);
 	}
 
 }

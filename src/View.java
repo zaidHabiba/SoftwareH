@@ -3,18 +3,18 @@ import javax.swing.JTextField;
 public class View extends javax.swing.JFrame{
 	
 
-    private javax.swing.JTextField Text1;
-    private javax.swing.JTextField Text2;
-    private javax.swing.JLabel TextR;
-    private javax.swing.JButton add;
-    private javax.swing.JButton div;
-    private javax.swing.JButton mod;
-    private javax.swing.JButton mul;
-    private javax.swing.JButton sqrt;
-    private javax.swing.JButton sub;
-    private Controller control;
+     javax.swing.JTextField Text1;
+     javax.swing.JTextField Text2;
+     javax.swing.JLabel TextR;
+     javax.swing.JButton add;
+     javax.swing.JButton div;
+     javax.swing.JButton mod;
+     javax.swing.JButton mul;
+     javax.swing.JButton sqrt;
+     javax.swing.JButton sub;
+     Controller control;
 	 
-    public void add(Controller c){
+    public void addController(Controller c){
     	control=c;
     	initComponents();
     }
@@ -28,67 +28,36 @@ public class View extends javax.swing.JFrame{
 	        Text2 = new javax.swing.JTextField();
 	        Text1 = new javax.swing.JTextField();
 	        add = new javax.swing.JButton();
+	        
+	        add.addActionListener(control);
+	        
 	        sub = new javax.swing.JButton();
+	        
+	        sub.addActionListener(control);
+	        
 	        mul = new javax.swing.JButton();
+	        
+	        mul.addActionListener(control);
+	        
 	        div = new javax.swing.JButton();
+	        
+	        div.addActionListener(control);
+	        
 	        sqrt = new javax.swing.JButton();
+	        
+	        sqrt.addActionListener(control);
+	        
 	        TextR = new javax.swing.JLabel();
+	        
 	        mod = new javax.swing.JButton();
 
+	        mod.addActionListener(control);
+	        
 	        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 	        setVisible(true);
 	        /****************************************************************************/
 
-	       
-	        add.addActionListener(new java.awt.event.ActionListener() {
-	            public void actionPerformed(java.awt.event.ActionEvent evt) {
-	            	
-	            	if(control.addActionPerformed(evt,Text1.getText(),Text2.getText())){
-	            		Update(""+control.getResult());
-	            	}
-	            }
-	        });
-	        
-	        
-	        sub.addActionListener(new java.awt.event.ActionListener() {
-	            public void actionPerformed(java.awt.event.ActionEvent evt) {
-	            	if(control.subActionPerformed(evt,Text1.getText(),Text2.getText())){
-	            		Update(""+control.getResult());
-	            	}
-	            }
-	        });
-	        
-	        mul.addActionListener(new java.awt.event.ActionListener() {
-	            public void actionPerformed(java.awt.event.ActionEvent evt) {
-	            	if(control.mulActionPerformed(evt,Text1.getText(),Text2.getText())){
-	            		Update(""+control.getResult());
-	            	}
-	            }
-	        });
-	        
-	        div.addActionListener(new java.awt.event.ActionListener() {
-	            public void actionPerformed(java.awt.event.ActionEvent evt) {
-	            	if(control.divActionPerformed(evt,Text1.getText(),Text2.getText())){
-	            		Update(""+control.getResult());
-	            	}
-	            }
-	        });
-	        
-	        sqrt.addActionListener(new java.awt.event.ActionListener() {
-	            public void actionPerformed(java.awt.event.ActionEvent evt) {
-	            	if(control.sqrtActionPerformed(evt,Text1.getText())){
-	            		Update(""+control.getResult());
-	            	}
-	            }
-	        });
-	        
-	        mod.addActionListener(new java.awt.event.ActionListener() {
-	            public void actionPerformed(java.awt.event.ActionEvent evt) {
-	            	if(control.modActionPerformed(evt,Text1.getText(),Text2.getText())){
-	            		Update(""+control.getResult());
-	            	}
-	            }
-	        });
+	  
 	        
 	        /****************************************************************************/
 	        
@@ -104,7 +73,7 @@ public class View extends javax.swing.JFrame{
 	        sqrt.setText("sqrt");
 
 	        TextR.setFont(new java.awt.Font("Terminator Two", 1, 12)); // NOI18N
-	        TextR.setText("558");
+	        TextR.setText("0.0");
 	        TextR.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
 	        mod.setText("mod");
