@@ -1,17 +1,23 @@
 
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Controller implements ActionListener{
+
+public class Controller implements ActionListener {
+
+
 	
 	Model model;
 	View view;
 	
-	public void add(Model m){
+	public void addModel(Model m){
 		model=m;
 	}
 	
-	public void add(View v){
+	public void addView(View v){
 		view=v;
+		
+		
 	}
 
 	public boolean addActionPerformed(ActionEvent evt,String s1,String s2) {
@@ -143,6 +149,55 @@ public class Controller implements ActionListener{
 	public double getResult(){
 		return model.getResult();
 	}
+
+	@Override
+	public void actionPerformed(ActionEvent evt) {
+		// TODO Auto-generated method stub
+		
+		if (evt.getSource()==view.add){
+			
+			if(addActionPerformed(evt,view.Text1.getText(),view.Text2.getText())){
+        		view.Update(""+getResult());
+        	}
+			
+		}
+		
+		else if(evt.getSource()==view.sub){
+			if(subActionPerformed(evt,view.Text1.getText(),view.Text2.getText())){
+				view.Update(""+getResult());
+        	}
+		}
+		
+		else if (evt.getSource()==view.mul){
+			if(mulActionPerformed(evt,view.Text1.getText(),view.Text2.getText())){
+				view.Update(""+getResult());
+        	}	
+		}
+		
+		else if( evt.getSource()==view.div){
+			if(divActionPerformed(evt,view.Text1.getText(),view.Text2.getText())){
+				view.Update(""+getResult());
+        	}
+		}
+		
+		else if(evt.getSource()==view.sqrt){
+			if(sqrtActionPerformed(evt,view.Text1.getText())){
+				view.Update(""+getResult());
+        	}
+			
+		}
+		
+		else if (evt.getSource()==view.mod){
+			if(modActionPerformed(evt,view.Text1.getText(),view.Text2.getText())){
+				view.Update(""+getResult());
+        	}
+		}
+		
+		
+		
+	}
+
+	
 	
 	@Override
 	public void actionPerformed(ActionEvent evt) {
