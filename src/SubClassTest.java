@@ -6,10 +6,10 @@ public class SubClassTest {
 
 	@Test
 	public void test() {
-		Controller n=new Controller();
+		Controller c=new Controller();
 		Model m=new Model();
-		n.add(m);
-		n.subActionPerformed(null,"5", "55");
+		c.add(m);
+		c.subActionPerformed(null,"5", "55");
 		assertEquals((int)m.getResult(),-50);
 	}
 

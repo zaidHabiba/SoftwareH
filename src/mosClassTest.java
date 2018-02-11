@@ -6,10 +6,10 @@ public class mosClassTest {
 
 	@Test
 	public void test() {
-		Controller n=new Controller();
+		Controller c=new Controller();
 		Model m=new Model();
-		n.add(m);
-		n.sqrtActionPerformed(null,"100");
+		c.add(m);
+		c.sqrtActionPerformed(null,"100");
 		assertEquals((int)m.getResult(),10);
 	}
 
