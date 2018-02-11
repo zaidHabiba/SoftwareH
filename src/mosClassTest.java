@@ -8,7 +8,7 @@ public class mosClassTest {
 	public void test() {
 		Controller c=new Controller();
 		Model m=new Model();
-		c.add(m);
+		c.addModel(m);
 		c.sqrtActionPerformed(null,"100");
 		assertEquals((int)m.getResult(),10);
 	}

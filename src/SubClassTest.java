@@ -8,7 +8,7 @@ public class SubClassTest {
 	public void test() {
 		Controller c=new Controller();
 		Model m=new Model();
-		c.add(m);
+		c.addModel(m);
 		c.subActionPerformed(null,"5", "55");
 		assertEquals((int)m.getResult(),-50);
 	}

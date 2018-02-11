@@ -9,9 +9,9 @@ public class StringTest {
 		View v=new View();
 		Controller c=new Controller();
 		Model m=new Model();
-		c.add(m);
-		c.add(v);
-		v.add(c);
+		c.addModel(m);
+		c.addView(v);
+		v.addController(c);
 		
 		boolean stringEnter=false;
 		if(!c.addActionPerformed(null, "566", "ddd")&&!c.subActionPerformed(null, "566", "ddd")
