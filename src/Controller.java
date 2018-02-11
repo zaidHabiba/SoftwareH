@@ -1,7 +1,7 @@
 
 import java.awt.event.ActionEvent;
 
-public class Controller {
+public class Controller implements ActionListener{
 	
 	Model model;
 	View view;
@@ -142,6 +142,53 @@ public class Controller {
 	
 	public double getResult(){
 		return model.getResult();
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent evt) {
+		// TODO Auto-generated method stub
+		
+		if (evt.getSource()==view.add){
+			
+			if(addActionPerformed(evt,view.Text1.getText(),view.Text2.getText())){
+        		view.Update(""+getResult());
+        	}
+			
+		}
+		
+		else if(evt.getSource()==view.sub){
+			if(subActionPerformed(evt,view.Text1.getText(),view.Text2.getText())){
+				view.Update(""+getResult());
+        	}
+		}
+		
+		else if (evt.getSource()==view.mul){
+			if(mulActionPerformed(evt,view.Text1.getText(),view.Text2.getText())){
+				view.Update(""+getResult());
+        	}	
+		}
+		
+		else if( evt.getSource()==view.div){
+			if(divActionPerformed(evt,view.Text1.getText(),view.Text2.getText())){
+				view.Update(""+getResult());
+        	}
+		}
+		
+		else if(evt.getSource()==view.sqrt){
+			if(sqrtActionPerformed(evt,view.Text1.getText())){
+				view.Update(""+getResult());
+        	}
+			
+		}
+		
+		else if (evt.getSource()==view.mod){
+			if(modActionPerformed(evt,view.Text1.getText(),view.Text2.getText())){
+				view.Update(""+getResult());
+        	}
+		}
+		
+		
+		
 	}
 	
 
