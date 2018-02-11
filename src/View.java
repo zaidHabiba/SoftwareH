@@ -40,55 +40,6 @@ public class View extends javax.swing.JFrame{
 	        /****************************************************************************/
 
 	       
-	        add.addActionListener(new java.awt.event.ActionListener() {
-	            public void actionPerformed(java.awt.event.ActionEvent evt) {
-	            	
-	            	if(control.addActionPerformed(evt,Text1.getText(),Text2.getText())){
-	            		Update(""+control.getResult());
-	            	}
-	            }
-	        });
-	        
-	        
-	        sub.addActionListener(new java.awt.event.ActionListener() {
-	            public void actionPerformed(java.awt.event.ActionEvent evt) {
-	            	if(control.subActionPerformed(evt,Text1.getText(),Text2.getText())){
-	            		Update(""+control.getResult());
-	            	}
-	            }
-	        });
-	        
-	        mul.addActionListener(new java.awt.event.ActionListener() {
-	            public void actionPerformed(java.awt.event.ActionEvent evt) {
-	            	if(control.mulActionPerformed(evt,Text1.getText(),Text2.getText())){
-	            		Update(""+control.getResult());
-	            	}
-	            }
-	        });
-	        
-	        div.addActionListener(new java.awt.event.ActionListener() {
-	            public void actionPerformed(java.awt.event.ActionEvent evt) {
-	            	if(control.divActionPerformed(evt,Text1.getText(),Text2.getText())){
-	            		Update(""+control.getResult());
-	            	}
-	            }
-	        });
-	        
-	        sqrt.addActionListener(new java.awt.event.ActionListener() {
-	            public void actionPerformed(java.awt.event.ActionEvent evt) {
-	            	if(control.sqrtActionPerformed(evt,Text1.getText())){
-	            		Update(""+control.getResult());
-	            	}
-	            }
-	        });
-	        
-	        mod.addActionListener(new java.awt.event.ActionListener() {
-	            public void actionPerformed(java.awt.event.ActionEvent evt) {
-	            	if(control.modActionPerformed(evt,Text1.getText(),Text2.getText())){
-	            		Update(""+control.getResult());
-	            	}
-	            }
-	        });
 	        
 	        /****************************************************************************/
 	        
