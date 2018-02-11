@@ -7,13 +7,13 @@ public class sqrtclassTest {
 	@Test
 	public void test() {
 		View v=new View();
-		Controller con=new Controller();
+		Controller n=new Controller();
 		Model m=new Model();
-		con.add(m);
-		con.add(v);
-		v.add(con);
+		n.add(m);
+		n.add(v);
+		v.add(n);
 		
-		assertTrue(!con.sqrtActionPerformed(null, "-1"));
+		assertTrue(!n.sqrtActionPerformed(null, "-1"));
 	}
 
 }

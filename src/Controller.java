@@ -1,3 +1,4 @@
+
 import java.awt.event.ActionEvent;
 
 public class Controller {
@@ -62,6 +63,9 @@ public class Controller {
 		
 		if(checkText(s1)&&checkText(s2)){
 			try{
+				if(getNumber(s2)==0){
+					throw new Exception();
+				}
 				double k=model.div(getNumber(s1), getNumber(s2));
 				model.setResult(k);
 			return true;
@@ -102,6 +106,9 @@ public class Controller {
 		
 		if(checkText(s1)){
 			try {
+				if(getNumber(s1)<0){
+					throw new Exception();
+				}
 				double k=model.sqr(getNumber(s1));
 				model.setResult(k);
 				return true;

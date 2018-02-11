@@ -6,10 +6,10 @@ public class MulClassTest {
 
 	@Test
 	public void test() {
-		Controller con=new Controller();
+		Controller n=new Controller();
 		Model m=new Model();
-		con.add(m);
-		con.mulActionPerformed(null,"5", "50");
+		n.add(m);
+		n.mulActionPerformed(null,"5", "50");
 		assertEquals((int)m.getResult(),250);
 	}
 

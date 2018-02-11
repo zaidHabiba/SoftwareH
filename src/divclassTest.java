@@ -6,10 +6,10 @@ public class divclassTest {
 
 	@Test
 	public void test() {
-		Controller con=new Controller();
+		Controller n=new Controller();
 		Model m=new Model();
-		con.add(m);
-		con.divActionPerformed(null,"550", "10");
+		n.add(m);
+		n.divActionPerformed(null,"550", "10");
 		assertEquals((int)m.getResult(),55);
 	}
 

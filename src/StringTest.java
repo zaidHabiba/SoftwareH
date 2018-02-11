@@ -7,16 +7,17 @@ public class StringTest {
 	@Test
 	public void test() {
 		View v=new View();
-		Controller con=new Controller();
+		Controller n
+		=new Controller();
 		Model m=new Model();
-		con.add(m);
-		con.add(v);
-		v.add(con);
+		n.add(m);
+		n.add(v);
+		v.add(n);
 		
 		boolean stringEnter=false;
-		if(!con.addActionPerformed(null, "566", "ddd")&&!con.subActionPerformed(null, "566", "ddd")
-				&&!con.mulActionPerformed(null, "566", "yy")&&!con.divActionPerformed(null, "566", "ddd")
-				&&!con.modActionPerformed(null, "566", "ddd")&&!con.sqrtActionPerformed(null, "ddd")){
+		if(!n.addActionPerformed(null, "566", "ddd")&&!n.subActionPerformed(null, "566", "ddd")
+				&&!n.mulActionPerformed(null, "566", "yy")&&!n.divActionPerformed(null, "566", "ddd")
+				&&!n.modActionPerformed(null, "566", "ddd")&&!n.sqrtActionPerformed(null, "ddd")){
 			stringEnter=true;
 		}
 		assertTrue(stringEnter);
