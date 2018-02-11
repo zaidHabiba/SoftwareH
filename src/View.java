@@ -16,6 +16,7 @@ public class View extends javax.swing.JFrame{
 	 
     public void addController(Controller c){
     	control=c;
+    	
     	initComponents();
     }
 
