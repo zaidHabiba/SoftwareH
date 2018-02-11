@@ -12,7 +12,7 @@ public class Controller implements ActionListener {
 	
 	public void addView(View v){
 		view=v;
-		
+		System.out.print("hhhh nice");
 		
 	}
 
