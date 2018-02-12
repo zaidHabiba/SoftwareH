@@ -26,18 +26,18 @@ public class Model {
     }
     
     
-    public double div(double x,double y) throws Exception{      
+    public double div(double x,double y)  throws Exception{      
            return x/y;
     }
     
     
-    public double sqr(double x)  throws Exception{
+    public double sqr(double x) throws Exception  {
            return Math.sqrt(x);
           
     }
        
     
-    public int mod(double x,double y)  throws Exception{
+    public int mod(double x,double y) throws Exception {
            return (int)x%(int)y;               
     }
     

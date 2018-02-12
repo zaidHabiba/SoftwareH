@@ -56,6 +56,7 @@ public class View extends javax.swing.JFrame{
 	        
 	        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 	        setVisible(true);
+	        this.setSize(500, 500);
 	        /****************************************************************************/
 
 
