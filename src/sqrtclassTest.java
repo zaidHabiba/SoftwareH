@@ -12,7 +12,6 @@ public class sqrtclassTest {
 		c.addModel(m);
 		c.addView(v);
 		v.addController(c);
-		
 		assertTrue(!c.sqrtActionPerformed(null, "-1"));
 	}
 

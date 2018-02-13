@@ -19,15 +19,14 @@ public class View extends javax.swing.JFrame{
     	
     	initComponents();
     }
-
-
-
+    
 	    private void initComponents() {
 
 	    	
 	    	
 	        Text2 = new javax.swing.JTextField();
 	        Text1 = new javax.swing.JTextField();
+	        
 	        add = new javax.swing.JButton();
 	        
 	        add.addActionListener(control);
@@ -73,12 +72,13 @@ public class View extends javax.swing.JFrame{
 	        div.setText("div");
 
 	        sqrt.setText("sqrt");
+	        mod.setText("mod");
 
 	        TextR.setFont(new java.awt.Font("Terminator Two", 1, 12)); // NOI18N
 	        TextR.setText("0.0");
 	        TextR.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-	        mod.setText("mod");
+	        
 
 	        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
 	        getContentPane().setLayout(layout);

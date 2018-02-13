@@ -14,21 +14,4 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>mylibs/junit.jar</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar</locationURI>
-		</link>
-		<link>
-			<name>mylibs/org.hamcrest.core_1.3.0.v201303031735.jar</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar</locationURI>
-		</link>
-		<link>
-			<name>mylibs/selenium-server-standalone-3.9.1.jar</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Downloads/selenium-server-standalone-3.9.1.jar</locationURI>
-		</link>
-	</linkedResources>
 </projectDescription>
