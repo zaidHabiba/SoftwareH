@@ -15,7 +15,7 @@ public class FaceBookTestCase {
 	@Before
 	public void setUp() throws Exception {
 		
-		System.setProperty("webdriver.gecko.driver", "D:\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "C:\\geckodriver.exe");
 		driver=new FirefoxDriver();
 		
 	}
