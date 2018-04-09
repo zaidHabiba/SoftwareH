@@ -2,7 +2,6 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-
 public class Controller implements ActionListener {
 
 
@@ -70,7 +69,8 @@ public class Controller implements ActionListener {
 		if(checkText(s1)&&checkText(s2)){
 			try{
 				if(getNumber(s2)==0){
-					throw new Exception();
+					view.doError("Infinity");
+					return false;
 				}
 				double k=model.div(getNumber(s1), getNumber(s2));
 				model.setResult(k);
@@ -113,7 +113,8 @@ public class Controller implements ActionListener {
 		if(checkText(s1)){
 			try {
 				if(getNumber(s1)<0){
-					throw new Exception();
+					view.doError("Error Value -ve");
+					return false;
 				}
 				double k=model.sqr(getNumber(s1));
 				model.setResult(k);
