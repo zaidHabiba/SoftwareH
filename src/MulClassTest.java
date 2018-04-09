@@ -1,11 +1,10 @@
 import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 public class MulClassTest {
 
 	@Test
-	public void test() {
+	public  void test() {
 		Controller c=new Controller();
 		Model m=new Model();
 		c.addModel(m);
