@@ -31,8 +31,8 @@ public class FaceBookTestCase {
 	public void test() {
 		driver.get("https://www.facebook.com");
 		driver.manage().window().maximize();
-		driver.findElement(By.xpath(".//*[@id='email']")).sendKeys("ayman.h.97abu-eideh@hotmail.com");
-		driver.findElement(By.xpath(".//*[@id='pass']")).sendKeys("ayman1234567890");
+		driver.findElement(By.xpath(".//*[@id='email']")).sendKeys("zaid-habiba@hotmail.com");
+		driver.findElement(By.xpath(".//*[@id='pass']")).sendKeys("00ZAED00DARK0023");
 		driver.findElement(By.xpath(".//*[@id='u_0_2']")).click();
 		
 	}
